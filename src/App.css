@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(90deg,#95bde7, #bce4ea); /* Gradient background using the new palette */
+  font-family: 'Roboto', sans-serif; /* Using Google Font */
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.dark-mode {
+  background: linear-gradient(90deg, #333, #444); /* Darker gradient for dark mode */
+  color: #f0f0f0; /* Light text color for dark mode */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the footer is at the bottom */
+}
+
+.top-bar {
+  background-color:linear-gradient(90deg,#95bde7, #bce4ea); /* New color for the top bar */
+  color: #333; /* Dark text color for better readability */
+  padding: 10px 0; /* Padding for the top bar */
+  text-align: center; /* Center align text */
+}
+
+button {
+  background: #70aaf0; /* New button background color */
+  color: #333; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #7e9bc8; /* Slightly lighter on hover */
+}
+
+.content-box {
+  flex: 1; /* Allow content to grow and fill available space */
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px; /* Increased width for better readability */
+  background: #a7cbdc; /* New light background color for content box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding for spacing */
+}
+
+.dark-mode .content-box {
+  background: #E5E1DA; /* Dark mode background for content box */
+  color: black; /* Light text color for dark mode */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode */
+}
+
+h1, h2 {
+  color: #333; /* Darker color for the title */
+}
+
+.dark-mode h1, .dark-mode h2 {
+  color: black; /* Light color for dark mode */
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px; /* Adjusted margin for better spacing */
+  font-weight: bold; /* Bold for labels */
+}
+
+input, select {
+  margin: 5px;
+  padding: 10px; /* Add padding for input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners for inputs */
+  width: calc(100% - 22px); /* Full width minus padding */
+}
+
+input:focus, select:focus {
+  border-color: #AAD7D9; /* Change border color on focus to match top bar */
+  outline: none; /* Remove default outline */
+}
+
+.error {
+  color: red;
+  margin: 10px 0; /* Margin for separation */
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: black; /* New color for result text */
+}
+
+.dark-mode .result {
+  color: black; /* Light color for dark mode */
+}
+
+.currency-details {
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  background: #FBF9F1; /* Background for currency details */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #000; /* Black text color */
+}
+
+.dark-mode .currency-details {
+  background: #E5E1DA; /* Darker background for currency details in dark mode */
+  color: #000; /* Black text color in dark mode */
+}
+
+footer {
+  background-color: #AAD7D9; /* New color for the footer */
+  color: #333; /* Text color for footer */
+  padding: 10px 0; /* Padding for the footer */
+  text-align: center; /* Center align text */
+  font-size: 0.9em; /* Font size for footer */
+}
+
+.dark-mode footer {
+  background-color: #333; /* Darker background for dark mode footer */
+}
